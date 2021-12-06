@@ -1,0 +1,48 @@
+
+  
+'''def setup():
+  global Mineboy
+  size(512,512)
+  Mineboy = loadImage('mineboyplayz.jpg')
+
+
+def draw():
+    Bron = loadImage('Lebron.jpg')
+    background(Mineboy)
+    tint(255,100)
+    image(Bron,0,0)'''
+    
+def setup():
+  global Mineboy
+  size(512,512)
+  Mineboy = loadImage('mineboyplayz.jpg')
+  Bron = loadImage('Lebron.jpg')
+  background(Mineboy)
+  tint(255,100)
+  image(Bron,0,0)
+
+p = True
+def draw():
+
+    frameRate(12)
+    println(str(mouseX) + " : " + str(mouseY))
+    stroke(0,255, 0)
+    strokeWeight(7)
+    line(0,150,512,150)
+    line(0,350,512,350)
+    line(150,0,150,512)
+    line(350,0,350,512)
+
+def mouseClicked():
+    if p == True:
+        ellipse(pmouseX,pmouseY,122,122)
+    else:
+        pass
+    return p
+    
+    
+
+
+  
+
+  
